@@ -1,23 +1,24 @@
-import Navbar from './components/Navbar.js';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { About } from './components/pages/About.js';
-import { Coding } from './components/pages/Coding.js';
-import { Art } from './components/pages/Art.js';
-import { Contact } from './components/pages/Contact.js';
-
+import Nav from './components/Nav';
+import About from './components/pages/About';
+import Coding from './components/pages/Coding';
+import Art from './components/pages/Art';
+import Contact from './components/pages/Contact';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Footer from './components/Footer';
 
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
+    <Router>
+      <Nav />
       <Routes>
-        <Route path="/" component={About} />
-        <Route path="coding" component={Coding} />
-        <Route path="art" component={Art} />
-        <Route path="contact" component={Contact} />
+        <Route path='/' element={<About />} />
+        <Route path='coding' element={<Coding />} />
+        <Route path='art' element={<Art />} />
+        <Route path='contact' element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+      <Footer />
+    </Router>
   );
 }
 
