@@ -1,1 +1,3 @@
-My resume website
+Simple Portfolio Website
+=
+Created with React.
