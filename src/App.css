@@ -1,11 +1,12 @@
-.App {
+.app {
   text-align: center;
-  background-color: blue;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0;
+  width: 100vw;
+  background-color: rgb(255, 253, 240);
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -1,0 +1,9 @@
+.footer-content {
+    height: 20vh;
+    color: black;
+    background-color: green;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
